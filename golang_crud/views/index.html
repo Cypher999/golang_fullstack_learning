@@ -1,0 +1,14 @@
+<table border="2">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+    {{range .Data}}
+        <tr>
+            <td>{{.Name}}</td>
+            <td>{{.Price}}</td>
+            <td>{{.Stock}}</td>
+        </tr>
+    {{end}}
+</table>
