@@ -1,0 +1,15 @@
+<form action="/edit/{{.Data.ID}}" method="post" enctype="multipart/form-data">
+    <div>
+        <label>Product Name</label>
+        <input name="name" value="{{.Data.Name}}"/>
+    </div>
+    <div>
+        <label>Product Price</label>
+        <input name="price" value="{{.Data.Price}}"/>
+    </div>
+    <div>
+        <label>Product Stoct</label>
+        <input name="stock" value="{{.Data.Stock}}"/>
+    </div>
+    <button type="submit">save</button>
+</form>
